@@ -1,15 +1,12 @@
-def format_num(n):
-  n = round(n, 1)
-  if n.is_integer():
-    return str(int(n))
-  return str(n)
+def formatarNumero(n):
+  return int(n) if n == int(n) else n
 
 def main():
   i, j = 0, 1
   c = 1
 
   while i <= 2:
-    print(f"I={format_num(i)} J={format_num(j)}")
+    print(f"I={formatarNumero(i)} J={formatarNumero(j)}")
 
     if c == 3:
       i += 0.2
