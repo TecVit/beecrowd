@@ -7,7 +7,7 @@ def main():
       print(f"media = {(s / 2):.2f}")
       e = 0
       while e != 1 and e != 2:
-        e = int(input("novo calculo (1-sim 2-nao)"))
+        e = int(input("novo calculo (1-sim 2-nao)\n"))
 
       if e == 2:
         return 0
