@@ -1,5 +1,5 @@
 def main():
-  n = 3
+  n = 12
   m = [[0 for _ in range(n)] for _ in range(n)]
   
   o = str(input())
@@ -11,8 +11,8 @@ def main():
   s, c = 0, 0
   
   for i in range(n):
-    for j in range(1+i, n-1-i):
-      s += m[i][j]
+    for j in range(1 + i, n-1-i, +1):
+      s += m[n-1-i][j]
       c += 1
   
   if o == "S":
